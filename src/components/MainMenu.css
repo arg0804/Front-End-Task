@@ -1,0 +1,118 @@
+.main-menu-container {
+  position: fixed;
+  left: -250px;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  padding: 30px;
+  transition: left 0.9s ease;
+  opacity: 1;
+  width: 250px;
+  animation: slideIn 0.3s ease;
+}
+
+.main-menu-container.opened {
+  left: 0;
+}
+
+.menu-icon {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #555;
+}
+
+.menu-options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.menu-options a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  margin-right: 0;
+  transition: margin-right 0.3s ease;
+}
+
+.menu-options a img {
+  margin-right: 10px;
+}
+
+.menu-options a:hover {
+  background-color: #777;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-info span {
+  color: white;
+  font-size: 14px;
+}
+.main-menu-container.closed .menu-options a img {
+  margin-right: 0; 
+}
+
+.additional-options {
+  margin-top: 20px;
+}
+
+.additional-options a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.closed .additional-options a{
+  display: none;
+}
+
+.closed .menu-options a {
+  flex-direction: row-reverse;
+  margin-right: -20px;
+}
+
+.closed .profile-info{
+  flex-direction: row-reverse;
+  margin-right: -20px;
+}
+
+.closed .profile-info span{
+  display: none;
+}
+
+.additional-options a:hover {
+  background-color: #777;
+}
+
+
+@keyframes slideIn {
+  from {
+    left: -250px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}

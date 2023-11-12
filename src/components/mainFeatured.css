@@ -1,0 +1,72 @@
+.main-featured {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  border-radius: 8px;
+  margin-left: 80px;
+}
+
+.cover-image {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.video-info {
+  flex-grow: 1;
+}
+
+.category {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f2f3f5;
+
+}
+
+
+.release-year,
+.mpaa-rating,
+.duration {
+  margin-bottom: 5px;
+  font-size: 25px;
+  color: #f2f3f5;
+}
+
+.description {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #f2f3f5;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.play-button,
+.info-button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f2f3f5;
+  color: #090909;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 40px;
+}
+
+.info-button {
+  background: linear-gradient(to right, #0b0ead, #3a7bd5);
+  color: rgb(196, 199, 201);
+  border-radius: 20px;
+  padding: 15px 40px;
+}
